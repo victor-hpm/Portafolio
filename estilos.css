@@ -1,0 +1,980 @@
+/* icono RESdes  */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?aomyri');
+    src: url('../fonts/icomoon.eot?aomyri#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?aomyri') format('truetype'), url('fonts/icomoon.woff?aomyri') format('woff'), url('fonts/icomoon.svg?aomyri#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e900";
+}
+
+
+/* icono   */
+
+
+/* burguer button */
+
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: rgba(red 0-255, green ", blue ", alpha(opacidad 0-1)); */
+    display: none;
+    /* display: none; para que solo se muestre en una tañamo de pantalla
+    inferior al ipad */
+    /* display: block; */
+    /* display: block; porqu tiene display inline 
+    y si es asi no se le peuede asignar ni w ni height:  */
+    line-height: 40px;
+    /* line-height: 40px; se puede hacer con display flex
+    pero antes de esto se hacia con este de 40 px igual al 
+    alto para alinear de manera vertical */
+    text-align: center;
+    /* text-align: center;para alinearlo de forma horizontal */
+    /* -----posicion---- */
+    position: fixed;
+    /* position: fixed;para que nos persiga por toda la pagina */
+    z-index: 4;
+    /* z-index: 4;para que este por ensima de todos los contenidos de la pag */
+    left: 5px;
+    top: 5px;
+    /* ----posicion--- */
+    color: white;
+    /* color: white;para darle un color ya que es como una fuente */
+    /* font-size: 50px; */
+    /* font-size: 50px; cambiarle el tamaño porque se conmporta como una fuente */
+}
+
+
+/* burguer buttom */
+
+
+/* REGLAS del 7 al 9
+SELECTORES: formados de como identificamos algun elemento de html (header)
+DECLARACIONES: todo lo que hacemos con ese selector(lo que esta entre llaves)
+PROPIEDADES: cosas particulares que podemos hacer con esos elemntos(backgraund)
+VALORES: cosas que esperan recivir como variables las propiedades para actuar de forma correcta (red)*/
+
+
+/* selector de etiqueta header-section-article-nav
+header {
+    background: red;
+} */
+
+
+/* selector descendente
+body header div nav ol li a */
+
+
+/* selector de clase (class)pueden ser iguales para muchos elementos
+class="link" */
+
+
+/* selector de clase "." 
+.y el nombre de la clase 
+.link */
+
+
+/* selector de id
+.portafolio */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    /*font-family fuente de famili*/
+    margin: 0;
+    /* para quitarle el margen al body */
+}
+
+
+/* con comas para decir que a todos los h llevan el mismo estilo, si no entiende que es un selector de cascada*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Propiedades de los textos
+line-height para modificar el alto de linea
+font-size para modificar el tamaño de la fuente
+font-weight tipos de pesos de fuente, para modificar el tipo de fuente multiplos de 100 (normal=400),(bold=600) 
+font-style para modificar el estilo de la fuente
+letter-spacing para modificar el espacio entre letras, (negativos)
+text-transform para transformar la fuente (mayusculas, minuculas, etc)
+text-decoration para moodificar la decoración de la fuente */
+
+h1 {
+    font-size: 35px;
+    line-height: 2;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    /* uppercase para tranformar todas las letras a mayusculas */
+    text-decoration: underline;
+    color: white;
+    /* margin: 0px 0px 0px 0px; */
+    /* margin: top right bottom left;  funciona en orden a las 
+    manecillas de un reloj, crea areas seguras para distribuir el contenido*/
+}
+
+h1 strong {
+    color: #026fff;
+}
+
+
+/* dividir el texto se puede hacer de dos maneras con el .proyect div que esta 
+dentro de este proyect o directamente con el .proyect-details */
+
+
+/* .proyect div {
+    width: 500px;
+} */
+
+
+/* gracias a la claseificacion de las clases en html ahora podemos ser muy
+especificos al momento de realizar estilos de altura y espesor  */
+
+h2 {
+    color: #026fff;
+    /* text-transform: uppercase; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 40px 0;
+}
+
+.hero {
+    height: 350px;
+    /* background-image: url('../Logos/hero.jpg'); 1*/
+    background-color: #1b2127;
+    /* background-size: 500px 300px; 1*/
+    /* x y */
+    /* tamañno del fondo */
+    /* background-repeat: no-repeat; 1*/
+    /* para que no se repita la imagen */
+    /* background-position-x: right; 1*/
+    display: flex;
+    /* para ubicarse dentro del alto asignado */
+    align-items: center;
+    /* para cologar el hola! en el centro */
+    justify-content: space-between;
+    /* poner la imagen y el texto repartidos */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; REDdes */
+}
+
+
+/* .proyect{
+    border-top: tamaño tipo estilo;
+} */
+
+.hero-image {
+    object-fit: over;
+    /* se arreglan las dimenciones origenales de la imagen */
+    /* height: auto; */
+}
+
+.portfolio {
+    background: #fafafa;
+    padding: 20px;
+    /* para separar y centrar un poco toda la 
+            seccion de portafolio */
+}
+
+.proyect {
+    /* una manera */
+    /* border-top: 10px solid red;
+    border-right: 10px solid black;
+    border-left: 10px solid red;
+    border-bottom: 10px solid red; */
+    /* otra manera */
+    /* border-color: red; */
+    /* si no definimos color de borde se toma el coler del texto */
+    /* border-width: 15px;
+    border-style: solid; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* asigna borde redondeado en las esquinas */
+    border-top-right-radius: 50px;
+    /* asigna un raio especifico para cas esquina dependiendo de 
+    cual se quiera editar  */
+    /* margin: 10px; lo quitamos para que este al par del titulo */
+    /* margende 10px para todos lados para que 
+    el border quede separado de los lados */
+    margin-bottom: 15px;
+    /* margin-top:
+    margin-left
+    margin-top */
+    padding: 20px;
+    /* separa el texto del borde buirder
+    y se usa igual que el margin margin: top right bottom left
+    en este caso en 20px para todos lo lados */
+    background: white;
+    /* debido a que toma el background de arriba 
+    tenemos que especificar el propio para el 
+    ya que esto es debido a la lectura por cascada */
+    /* COMBINACION PARA CENTRAR VERTICAL Y HORIZONTALMENTE EL CONTENIDO */
+    /* 1 */
+    display: flex;
+    /* display: flex; para poner la imagen a lado del
+            texto ya que estaba abajo */
+    /* 2 */
+    align-items: center;
+    /* 3 */
+    justify-content: space-between;
+    /* 1,2,3 propiedades del padre */
+    /* sombras */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    flex-wrap: wrap;
+    /* flex-wrap: wrap;RESdes */
+}
+
+.proyect-details {
+    width: 50%;
+    /* width: 500px; este es fijo pero para el RESdes 
+            se pone el 50% para que se comoque uno a lao del otro *
+            /* margin: 10px 20px; */
+    /* para elementos con ancho fijo y display de block
+    se pueden centrar con margin 10px para top y buttom
+    20px r y l, es como la funcion del padding*/
+    /* margin: auto; el conenido queda sentrado */
+}
+
+
+/* RESdes */
+
+.proyect-imageConteiner img {
+    max-width: 100%;
+    /* imagenes responsive 
+            que tenga un acnho del 100% que tenga 
+            su elemento padre el .proyect-details */
+}
+
+.proyect-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.proyect-course,
+.proyect-date,
+.proyect-url {
+    margin: 10px 0;
+}
+
+.proyect-description {
+    font-size: 20px;
+}
+
+.proyect strong {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.proyect-imageConteiner {
+    width: 50%;
+    /* width: 500px; este es fijo pero para el RESdes 
+            se pone el 50% para que se comoque uno a lao del otro */
+    height: 100px;
+}
+
+
+/* gris oscuro = #1d252c
+gris claro = #626262
+background gris =#1b2127 
+celeste = #026fff
+no importan mayusculas o minusculas*/
+
+
+/* backgrounds de color de imagen  
+background-color para agregar un color de fondo
+color para agregar un color al texto
+text-decoration para modificar la decoración del texto
+background-image para agregar una imagen de fondo
+background-size para modificar el tamaño del background asignado
+background-repeat para modificar la repetición del backgound asignado
+background-position para modificar la posición del bakground asignado*/
+
+.header {
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    /* display: flex; para que el logo y las amclas se 
+            coloquen a los lados y no uno abajo y otro arriba */
+    align-items: center;
+    /* ULTIMO align-items: center; alinear los items
+            de manera vertical y que el logo quede centrado*/
+    justify-content: space-between;
+    /* justify-content: space-between;  para organizarlo, el logo a la izquierda
+            y las anclas a la derecha       */
+    height: 70px;
+    /* height: 70px; darle un alto fijo al header
+            para lorar que toda el area de las anclas 
+            sea seleccionable  */
+    /* RESdes */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap;para que los elementos bajen den
+            pendiendo del tamaño del dispositivo en que se vea RESdes */
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    /* quitar mergenes y padding a los ol y ul */
+    list-style: none;
+    /* list-style: none; para quitarle los numeros 
+       a las anclas*/
+}
+
+
+/* quitarle margen al logo dentro de header */
+
+figure {
+    margin: 0;
+}
+
+
+/* selector descendente */
+
+.header a {
+    color: white;
+    /* color de las anclas */
+    text-decoration: none;
+    /* les quita la linea de abajo a las anclas */
+    height: inherit;
+    /* 3 la ultima para poder poner bien las manitas */
+    /* en toda el area */
+    display: flex;
+    /* igual flex para que se acomode paso 3*/
+    align-items: center;
+    /* para centrar paso 3 */
+    padding: 0 10px;
+    /* para separar cada ancla arriba y abajo con 0 y derecha
+            en izquirda con 10px */
+}
+
+.menu {
+    height: inherit;
+    /* 2 height: inherit; el padre con la misma caracteristica
+        que el hijo  pero tambien los  deben tener
+        las mismas caracteristicas */
+}
+
+.header ol {
+    display: flex;
+    /* display: flex; para que no esten uno bajo otro
+             aplicndo a los hijos directos */
+    height: inherit;
+    /*  1 height: inherit; herencias expliccitas el al que debe llevar pero hay
+       que tener en cuenta la herencia de pdre a hijo por 
+       lo tanto no cambia y debe de estar heredando el alto
+       del padre por lo tanto su padre es el menu y le tenemos que poner 
+       el mismo alto */
+}
+
+.header ol li {
+    height: inherit;
+    /* el hijo debetener este dato igual */
+}
+
+
+/* pafre EJERCICIO DE LA CAJAS con flexbox  */
+
+
+/* .flexbox {
+            display: flex; */
+
+
+/* para que se pongan a la derecha del sig elemento */
+
+
+/* flex-wrap: wrap; */
+
+
+/* flex-wrap: wrap; los elemento caeran dependiendo el tamaño de la pagina */
+
+
+/* flex-wrap: nowrap; ningun elemento caiga */
+
+
+/* } */
+
+
+/* hijo */
+
+
+/* .box {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border: 1px solid red;
+            flex-shrink: 0; */
+
+
+/* propiedad para hijos de padres con display flex
+    flex-shrink: 0-1; 0% encojibLe o 100% encojible,
+    pero los elementos se salen de la hoja hacia la derecha y por lo 
+    tanto necesitamos una propiedad que se llama flex-wrap
+    la cual es una propiedad para el padre */
+
+
+/* } */
+
+.experience-title {
+    margin-left: 20px;
+}
+
+.experience-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* para que no se vallan a un costado 
+            pero ttambien se tiene que heredar 
+            a container */
+}
+
+.experience {
+    /* border: 1px solid red; */
+    /* borde de los elementos */
+    /* RESdes */
+    margin: 1%;
+    /* 4 margenes de 1% = 4% */
+    width: 48%;
+    /* dos elementos de 48% = 96% */
+    /* 96%+4%=100% -- para que se adapten dependiendo el tamaño de pantalla*/
+    /* RESdes */
+    /* margin: 10px; lo cambiamos por porcentajes */
+    /* width: 480px; lo cambiamos por porcentajes */
+    /* ancho de cada cuadro (cards) */
+    border-radius: 10px;
+    /* border-radius: 10px;para darle la curvatura a las
+            esquinas de los bordes, pero la img se desborda
+            y esto se repara con un overflow */
+    overflow: hidden;
+    /* overflow: hidden;esto hace que todo lo que se desborde
+            del borde se va a ocultar pero quedean
+            cuadros muy pequeños y corta casi todo
+            y se arregla con un 
+            flex-shrink con 0 tolerancia*/
+    flex-shrink: 0;
+    /* flex-shrink: 0; para que no se acorte la mayor
+            parte del contenido del borde */
+    background-color: #f4fbff;
+    /* sombras */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.experience img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+    /* object-fit: cover; para que no pierda proporcion la imagen
+            pero se come los extremos para que quede dentro de
+            los rangos de la img */
+}
+
+.experience-details {
+    margin: 20px 40px;
+    /* margin: 20px 40px; 20 abajo y arriba
+            y 40 costados para que de separe el texto del borde
+            ya que esta dentro de un div y su clase es .experience-details */
+    background-color: white;
+    margin-top: -40px;
+    /* posicionarlo por encima de la imagen
+            con margenes negativos (pero puede ser que 
+            quede la imegn encima del tecto y eso se
+            arregla con un posicion) */
+    position: relative;
+    /* position: relative;superpone los detalles 
+            en la imgen */
+    padding: 20px;
+    /* para separar el tecto del bode blanco */
+    text-align: center;
+    /* para que el texto este alineado en el centro */
+}
+
+.experience-description {
+    text-align: left;
+    /* para alinear a la izq la descripcion */
+}
+
+
+/* para el boton */
+
+.experience-url {
+    color: #056fff;
+    border: 1px solid;
+    /* el bode toma el color de la letra */
+    padding: 5px 20px;
+    text-decoration: none;
+    /* quitarle el surbrayado al texto */
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    /* alto */
+    display: flex;
+    /* alineado vertical */
+    align-items: center;
+    /* alineado vetical */
+    justify-content: space-between;
+    /* justify-content: space-between;oganizar los
+            iconos de manera horizontal (caracteristica del padre) */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap;RESdes */
+}
+
+.form-email {
+    margin: 10px;
+}
+
+.form-email input {
+    /* input de que la imagen va adentro del recuadro */
+    border-color: gray;
+    padding: 5px 20px 5px 25px;
+    /* placeholder espacios */
+    border-style: solid;
+    border-radius: 5px;
+    background-image: url(envelope.svg);
+    /* background-image: url(../images/envelope.svg); */
+    /* los dos puntos significan que salga de la carpeta y busque */
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: block;
+    /* para que baje el boton */
+    margin: 5px 0 0 220px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    border-color: white;
+    padding: 3px 15px;
+    /* para hacer mas grande el boton */
+}
+
+
+/* .social {
+        } 
+        /* border: 1px solid red; quitamos este borde ya que 
+        ya no nos sirve porque solo la queriamos para saber la ubicacion
+        de los iconos */
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid white;quitamos este borde ya que 
+            ya no nos sirve porque solo la queriamos para saber la ubicacion
+            de los iconos */
+    background-size: 50px 50px;
+    /* background-size: 50px 50px;estaba en cada una de las 4 de abajo 
+            pero como se repite lo podemos poner en las caracteristicas del
+            padre que es .social-link */
+    margin: 0 10px;
+    /* margen entre los cuadritos */
+}
+
+.social-link.twitter {
+    background-image: url(twitter.svg);
+    /* background-image: url(../images/twitter.svg); */
+    /* svg (scalavor vecter graphics) formato (imagenes que se pueden
+            escalar y nunca perderan resolucion)por lo tanto hay que darles un tamaño*/
+}
+
+.social-link.facebook {
+    background-image: url(facebook.svg);
+    /* svg (scalavor vecter graphics) formato (imagenes que se pueden
+            escalar y nunca perderan resolucion)por lo tanto hay que darles un tamaño*/
+}
+
+.social-link.github {
+    background-image: url(github.svg);
+    /* svg (scalavor vecter graphics) formato (imagenes que se pueden
+            escalar y nunca perderan resolucion)por lo tanto hay que darles un tamaño*/
+}
+
+.social-link.instagram {
+    background-image: url(instagram.svg);
+    /* svg (scalavor vecter graphics) formato (imagenes que se pueden
+            escalar y nunca perderan resolucion)por lo tanto hay que darles un tamaño*/
+}
+
+.footer {
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* para alinear de manera vertical
+            pero tiene que ir junto con el 
+            alineamiento de la imagen dentro de footer */
+    justify-content: space-between;
+    /* para que esten alineados en los 
+            extremos, en el izquiedo el texto de 
+        curso de desarrollo web y en el extremo
+        derecho el texto de designed whith love  */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap;RESdes */
+}
+
+.footer img {
+    vertical-align: middle;
+    /* queda completamente alineado verticalmente 
+            la imagen y los textos junto con el 
+            align-items de footer */
+}
+
+
+/* para finalizar con el footer necesitamos
+        darle un clor balnco a la ancla de redireccion */
+
+.footer a {
+    color: white;
+}
+
+.container {
+    /* border: 1px solid red; */
+    /* lo quitamos unaves hallamos terminado los 
+            conteiner, ya que facilita la identificacion 
+            de cada container  */
+    /* RESdes */
+    max-width: 1000px;
+    /* width: 1000px; estaba asi pero pone por el RESdes  */
+    /* para que sea variable y su maximo sea el indicado */
+    flex: 1;
+    /* flex: 1; toma todo el ancho disponible dentro del elemento */
+    margin: 0 auto;
+    /* centra el elemento */
+    /*  */
+    /* agregar esto causa que se pierdan todas las caractireisticas
+            que se agregaron anteriomente ya que solo se pasan a los hijo drirectos
+            y este vine siendo el segundo hijo por lo tanto tenemos que pònerle inherit
+            que herede las todas las caracteristicas. */
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    /* estas caracteristicas se usan para todo y se aplica a cada seccion
+            se le pone la clase conteiner pata utilizarla */
+    flex-wrap: inherit;
+    /* hereadado experience list para que se pueden poner 
+            las experiencias una bajo otra   */
+}
+
+
+/* RESdes */
+
+
+/* 2da forma de media */
+
+
+/* //// desktop first empezar desde me MQ mas grande */
+
+
+/* estos 4 son las medidas estandar de la mayoria de los dispositivos  */
+
+
+/* por lo que se vera bien la la mayoria de dispositivos */
+
+@media screen and (max-width: 1023px) {
+    .container {
+        padding: 0 1em;
+    }
+    .hero {
+        height: auto;
+        /* alto automatico para que entre el texto y la imagen
+                se le quita el que tiene de 300px */
+        position: relative;
+        /* para que la imagen quede traspuesta correctamente y solucionar el 
+                problema generado en el estiramiento de la imagen */
+        overflow: hidden;
+        /* para que la imagen no se desborde y no pierda formato */
+        padding: 2em;
+    }
+    h1 {
+        font-size: 2.5em;
+        /* modificando tamaño de letra */
+        z-index: 2;
+        /* z-index: 2;sera el que este encima del z-index 2 */
+    }
+    /* positions css */
+    .hero-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        /* se logra que se estire en todas sus direcciones
+                pero se crea un problema ya que no es realativo a algo 
+                por lo tanto el hero tendra que tener posicion relativa */
+        z-index: 1;
+        /* z-index: 1; es el elemento que queremos que este
+                por debajo del z-index 2 el cual sera el que ete arriba */
+        width: 100%;
+        /* para que la imagen ocupe todo el ancho establecido */
+        height: 100%;
+        /* para que ocupeto todo el alto */
+    }
+    .experience-title {
+        margin-left: 0;
+        /* primer beak point */
+    }
+    .html-video {
+        width: 100%;
+        /* para que el ancho del video ocupe todo el espacio */
+        height: auto;
+        /* para que el alto del video sea variable */
+    }
+    .youtube-video {
+        /* width: 100%; no funciona por las caracteristicas de insercion */
+        /* para que el ancho del video ocupe todo el espacio */
+        /* height: auto; no funciona por las caracteristicas de insercion */
+        /* para que el alto del video sea variable */
+        /* h*100/w = formula para videos que tienen 
+                que tienen 16/9 proporciones --- 315*100/560=56.25* para horizontal
+                /y para la vertical (en caso de videos verticales) w*100/h
+                position: absolute;
+                /* y tenemos que poner en relativa a flexible-video */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* para que el video se estire */
+    }
+    .flexible-video {
+        width: 100%;
+        height: 0;
+        padding-top: 56.25%;
+        /* por la formula usada anteriormente */
+        background: blue;
+        position: relative;
+        /* para que el video se coloque en la posicion indicada */
+    }
+    .portfolio {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .burger-button {
+        display: block;
+        /* para que solo se muestre en este tamañno de pantalla */
+    }
+    /* MENU-BURGER */
+    .menu {
+        position: fixed;
+        /* para que salga de la pag a aprtir del tamaño de ipad */
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 3;
+        /* z-index: 3;para qu este abajo del burger-button */
+        top: 0;
+        left: -100vw;
+        /* left: -100vw; para ocultarlo hacia la izq ocupando todo el ancho */
+        width: 100vw;
+        /* width: 100vw; el ancho igual a los 100vw */
+        /* height: 100vh; */
+        /* heigth: 100vh; el ancho igual a los 100vh */
+        bottom: 0;
+        /* bottom: 0;porque no sirvio la de height: 100vh;
+        hacemos que se estire hacia el top */
+        display: flex;
+        /* display: flex;para porder entrar los elementos */
+        align-items: center;
+        /* align-items: center;para centrar verticalmente */
+        justify-content: center;
+        /* justify-content: center;para centrar horizontalemente */
+        transition: .3s;
+    }
+    .menu.is-active {
+        /* .menu.is-active { con . y sin espacios quiere 
+        decir que tiene que tener las dos clases */
+        left: 0;
+        /* para que salga el menu
+        se le agrega arriba una animacion 
+        transition: .3s;- despues de hacer eso se agrega
+        el javascript para que con un tap salga el boton */
+    }
+    /* menu-burger */
+    h2 {
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
+    .header {
+        display: block;
+        /* para que bajen los elementos cuando se haga mas pequeña la pantalla */
+        height: auto;
+        /* para quitar el ancho fijo y que sea automatico */
+    }
+    .header ol {
+        display: initial;
+        /* para que regrese a sus valores iniciales (valor por defecto) inline*/
+    }
+    .header ol li {
+        height: 50px;
+        text-align: center;
+        /* centrar el texto*/
+    }
+    .header a {
+        justify-content: center;
+        /* centrar el texto horizontalmente */
+        height: 40px;
+        font-size: 1.5em;
+        text-decoration: underline;
+        margin-bottom: 0.5em;
+    }
+    .header .logo {
+        text-align: center;
+        /* centrar el logo */
+    }
+    .proyect {
+        display: block;
+        /* para que la imagen se ponga abajo cuando 
+                este un poxel mas abajo del ipad */
+    }
+    .proyect-imageConteiner {
+        width: auto;
+        /* ancho automatico */
+        text-align: center;
+        /* para centrar la imagen */
+        height: auto;
+        /* alto automatico */
+    }
+    .proyect-details {
+        width: auto;
+        /* ancho automatico */
+        /* font-size: 16px; */
+        /* como por defecto son 16 no hace falta ponerlos */
+        /* para que los em tengan una refrencia  */
+    }
+    /* ------hacer relativo el tamaño de fuente y que cambien
+            todas de un solo jalon utilizamos las unidades relativas 
+            em */
+    .proyect-title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .proyect-course {
+        font-size: .7em;
+    }
+    .proyect-date {
+        font-size: 1em;
+    }
+    .proyect-url {
+        font-size: 1em;
+    }
+    .proyect-description {
+        font-size: 1em;
+    }
+    /* ---- */
+    /* margenes variables */
+    .proyect-course,
+    .proyect-date,
+    .proyect-url {
+        margin: .3em 0;
+    }
+    .experience img {
+        width: 100%;
+        /* para que la imagen ocupe su 100% de 
+            ancho en todos sus tamaños */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    .proyect-details {
+        font-size: 14px;
+        /* para pantallas mas pequeñas  */
+    }
+    .experience {
+        width: auto;
+        /* para que baje y ocupe todo el ancho */
+        /* dependeiendo del tañano de pantalla */
+        flex-shrink: initial;
+        /* flex-shrink: 0-1 eta por en 0 lo que esta 
+                desconfigurando la pag y or lo tanto lo ponemos
+                en sus valores iniciales */
+    }
+    .experience-details {
+        /* 1em =16px por defecto
+                porque no esta especificado en el 
+                padre */
+        margin: -2em .5em .5em;
+        /* para repetir el valor en el 
+                ultimo digito simplemente no seapone nada para que 
+                lo repita */
+        padding: 1em;
+    }
+    .contact {
+        height: auto;
+        /* para modificar el alto de contacto 
+                desde 480 de pantalla */
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+        /* porque tiene display flex 
+                y no se puede centrar lo elemtes con 
+                text-align center  lo ponemos en 
+                display block*/
+    }
+    .form-email button {
+        margin: 1em auto;
+    }
+    .footer {
+        display: block;
+        /* porque tiene display fex */
+        text-align: center;
+        /* centrar contenido */
+        border: 1px solid transparent;
+        /* porque hay un margin colpsin t 
+                con un margen se arregla */
+    }
+    .social-link {
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
+        /* background-size: x y;  o 100% para el mismo tamaño del ancho y alto de arriba*/
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        /* border: 10px solid green; */
+    }
+}

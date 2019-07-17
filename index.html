@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Holo soy Víctor Peña</title>
+    <link rel="icon" type="image/png" href="VPf.png" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <!--fuentes copiadas de fonts.google.com para tener la funte disponible para cuendo la hoja de estlos cargue la ponemos aqui y lego se pone en css-->
+    <link rel="stylesheet" href="estilos.css">
+    <!--Con archivo extrerno y puedes escoger body,header cualquier parte de la pagina - ESTILOS 3 pero siempre pesa mas el que se lee al finar por la lectura en cascada-->
+    <!--pero se puede usar !important para que por la gerarquia de css se quede esta obcion de color-->
+    <!--es recomendabe usar estilos por archivos externos para tener separados html y css y organizar todos los estulos en un solo lugar-->
+    <!-- RESdes -->
+    <!-- <link rel="stylesheet" href="media.css" media="screen and (max-width:768px)"> -->
+    <!-- fomrma 1 de agregar un media con un css aparte 
+    o tambien se puede hacer agregandolo a nuestra hoja de estilos.css forma 2, por eso
+    se comento la forma 1  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <style>
+        /* 3ra forma de agregar un media pero utilizaremos la 2da por estilos.css */
+        
+        @media screen and (max-width: 768px) {
+            body {
+                border: 10px solid blue;
+            }
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- tag i para insertar iconos -->
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <!-- id selector que se va a usar para JS -->
+
+    <header class="header">
+        <!--forma mas popular de poner estilo-->
+        <div class="container">
+            <!-- CLASE CONTENEDOR Y DIV PARA SEPARAR LA SECCION -->
+            <figure class="logo">
+                <img height="50" src="VP.png" />
+            </figure>
+            <nav class="menu">
+                <!--link de navegacion-->
+                <ol>
+                    <!--listas ordenadas-->
+                    <li>
+                        <!--item de una lista para poder poner un enlace-->
+                        <a class="link" href="#Portafolio">Portafolio</a>
+                        <!--a de ancla y href para un vinculo y que aparezca la mano, enlazar con la palabra portafolio y un id, el # identifica que el elace es interno, class= selector de clase para evitar un selector descendente-->
+                    </li>
+                    <li>
+                        <a class="link" href="#Experiencia">Experiencia</a>
+                        <!--enlazar con la palabra href experiencia  y un id en seccion, el # identifica que el elace es interno-->
+                    </li>
+                    <li>
+                        <a class="link" href="#Contacto">Trabajemos juntos</a>
+                        <!--enlazar con la palabra href contacto y un id en seccion, el # identifica que el elace es interno-->
+                    </li>
+                </ol>
+            </nav>
+        </div>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="container">
+
+            <h1>
+                Hola! Soy <strong>Víctor Peña</strong> <br> <strong>Ingeniero Geofísico</strong> <br> Con <strong>pasión</strong> por el <br> <strong>desarrollo web</strong>
+                <!-- strong para resaltar palabras en el texto -->
+            </h1>
+            <img class="hero-image" src="hero.jpg" width="650" height="300" alt="Imagen Principal" />
+        </div>
+
+    </section>
+
+
+    <section id="Portafolio" class="portfolio">
+        <!--id enlazado-->
+
+        <div class="container">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="proyect">
+                <div class="proyect-details">
+                    <!--div para separar la parte izquierda la info y en la parte derecha la imagen para poder hacer un selector en css-->
+                    <h3 class="proyect-title">Platzi Viveo</h3>
+                    <h6 class="proyect-course">React Native / React</h6>
+                    <p class="proyect-date"><small><strong>Fecha:</strong> 23-11-91</small></p>
+                    <p class="proyect-url"><small><strong>Puedes verlo en:</strong>www.platzi.com/native</small></p>
+                    <p class="proyect-description">En muchas obras cultas, en cuanto escritas, todo parágrafo o párrafo suele ser indicado con el signo tipográfico llamado muchas veces calderón representado gráficamente de este modo: ¶. En ocasiones es indicado con el signo de parágrafo,
+                        conocido también como signo de sección: §.</p>
+                </div>
+                <figure class="proyect-imageConteiner">
+                    <img class="proyect-image" width="400" height="150" src="rojo.jpg" alt="imagen extra" />
+                </figure>
+            </article>
+            <article class="proyect">
+                <div class="proyect-details">
+                    <!--div para separar la parte izquierda la info y en la parte derecha la imagen para poder hacer un selector en css-->
+                    <h3 class="proyect-title">Platzi Viveo</h3>
+                    <h6 class="proyect-course">React Native / React</h6>
+                    <p class="proyect-date"><small><strong>Fecha:</strong>23-11-91</small></p>
+                    <p class="proyect-url"><small><strong>Puedes verlo en:</strong>www.platzi.com/native</small></p>
+                    <p class="proyect-description">En muchas obras cultas, en cuanto escritas, todo parágrafo o párrafo suele ser indicado con el signo tipográfico llamado muchas veces calderón representado gráficamente de este modo: ¶. En ocasiones es indicado con el signo de parágrafo,
+                        conocido también como signo de sección: §.</p>
+
+                </div>
+                <figure class="proyect-imageConteiner">
+                    <img class="proyect-image" width="400" height="150" src="rojo.jpg" alt="imagen extra" />
+                </figure>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- insertar video html 5 
+    pero lo colocare en el primer recuadro de la experiencia-->
+
+    <!-- <video class="html-video" src="Bartolito La Granja de Zenón 3.mp4" width="1280" height="720" controls></video> -->
+
+
+    <div class="container">
+
+        <h2 id="Experiencia" class="experience-title">Mas sobre mi Experiencia</h2>
+
+    </div>
+
+    <!-- video insertado desde youtube video responsive, lo  colocare en el segundo recuadro de la experiencia-->
+    <!-- <div class="flexible-video"> -->
+    <!-- <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/chPhlsHoEPo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <!-- </div> -->
+
+    <section class="experience-list">
+        <!--id enlazado (padre de las experiencias -->
+        <div class="container">
+            <article class="experience">
+                <figure class="experience-imageConteiner">
+                    <video class="html-video" src="Bartolito La Granja de Zenón 3.mp4" width="1280" height="720" controls></video>
+                    <!-- <img class="experience-image" src="mundo.jpg" width="600" height="300" /> -->
+                </figure>
+                <div class="experience-details">
+                    <h3 class="experiece-title">PlatziConf Mexico 2018</h3>
+                    <p class="experience-description">Un párrafo, también llamado parágrafo (del griego παράγραφος [parágraphos], y este de παρα, «próximo, semejante», y γραφος, «escritura»), es una unidad comunicativa formada por un conjunto de oraciones secuenciales que trata un mismo
+                        tema. Está compuesto por un conjunto de oraciones que tienen cierta unidad temática o que, sin tenerla, se enuncian juntas. Es un componente del texto que en su aspecto externo comienza con una mayúscula y termina en un punto y
+                        aparte. Comprende varias oraciones relacionadas sobre el mismo subtema; una de ellas expresa la idea principal.</p>
+                    <a class="experience-url" href="https://www.youtube.com/watch?v=sOmVOe8DArc" target="_blank">video martillo thor</a>
+                    <!--enlace de video y target="_blank" para que el video lo abra en una nueva pagina sin cerrar la actual-->
+                </div>
+                <!-- se tiene que dividir en dos partes los detalles y la imagen -->
+            </article>
+            <article class="experience">
+                <figure class="experience-imageConteiner">
+                    <div class="flexible-video">
+                        <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/chPhlsHoEPo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- <img class="experience-image" src="mundo.jpg" width="600" height="300" /> -->
+                </figure>
+                <div class="experience-details">
+                    <h3 class="experiece-title">PlatziConf Mexico 2018</h3>
+                    <p class="experience-description">Un párrafo, también llamado parágrafo (del griego παράγραφος [parágraphos], y este de παρα, «próximo, semejante», y γραφος, «escritura»), es una unidad comunicativa formada por un conjunto de oraciones secuenciales que trata un mismo
+                        tema. Está compuesto por un conjunto de oraciones que tienen cierta unidad temática o que, sin tenerla, se enuncian juntas. Es un componente del texto que en su aspecto externo comienza con una mayúscula y termina en un punto y
+                        aparte. Comprende varias oraciones relacionadas sobre el mismo subtema; una de ellas expresa la idea principal.</p>
+
+                    <a class="experience-url" href="https://www.youtube.com/watch?v=sOmVOe8DArc" target="_blank">video martillo thor</a>
+                    <!--enlace de video y target="_blank" para que el video lo abra en una nueva pagina sin cerrar la actual-->
+                </div>
+                <!-- se tiene que dividir en dos partes los detalles y la imagen -->
+            </article>
+            <article class="experience">
+                <figure class="experience-imageConteiner">
+                    <img class="experience-image" src="mundo.jpg" width="600" height="300" />
+                </figure>
+                <div class="experience-details">
+                    <h3 class="experiece-title">PlatziConf Mexico 2018</h3>
+                    <p class="experience-description">Un párrafo, también llamado parágrafo (del griego παράγραφος [parágraphos], y este de παρα, «próximo, semejante», y γραφος, «escritura»), es una unidad comunicativa formada por un conjunto de oraciones secuenciales que trata un mismo
+                        tema. Está compuesto por un conjunto de oraciones que tienen cierta unidad temática o que, sin tenerla, se enuncian juntas. Es un componente del texto que en su aspecto externo comienza con una mayúscula y termina en un punto y
+                        aparte. Comprende varias oraciones relacionadas sobre el mismo subtema; una de ellas expresa la idea principal.</p>
+
+                    <a class="experience-url" href="https://www.youtube.com/watch?v=sOmVOe8DArc" target="_blank">video martillo thor</a>
+                    <!--enlace de video y target="_blank" para que el video lo abra en una nueva pagina sin cerrar la actual-->
+                </div>
+                <!-- se tiene que dividir en dos partes los detalles y la imagen -->
+            </article>
+            <article class="experience">
+                <figure class="experience-imageConteiner">
+                    <img class="experience-image" src="mundo.jpg" width="600" height="300" />
+                </figure>
+                <div class="experience-details">
+                    <h3 class="experiece-title">PlatziConf Mexico 2018</h3>
+                    <p class="experience-description">Un párrafo, también llamado parágrafo (del griego παράγραφος [parágraphos], y este de παρα, «próximo, semejante», y γραφος, «escritura»), es una unidad comunicativa formada por un conjunto de oraciones secuenciales que trata un mismo
+                        tema. Está compuesto por un conjunto de oraciones que tienen cierta unidad temática o que, sin tenerla, se enuncian juntas. Es un componente del texto que en su aspecto externo comienza con una mayúscula y termina en un punto y
+                        aparte. Comprende varias oraciones relacionadas sobre el mismo subtema; una de ellas expresa la idea principal.</p>
+
+                    <a class="experience-url" href="https://www.youtube.com/watch?v=sOmVOe8DArc" target="_blank">video martillo thor</a>
+                    <!--enlace de video y target="_blank" para que el video lo abra en una nueva pagina sin cerrar la actual-->
+                </div>
+                <!-- se tiene que dividir en dos partes los detalles y la imagen -->
+            </article>
+        </div>
+
+    </section>
+
+
+    <section class="contact" id="Contacto">
+        <!--id enla zado-->
+        <div class="container">
+            <form class="form-email" action="/Suscripción/">
+                <!--formulario, suscription sitio alq ue mandara el correo insertado-->
+                <h3>¿Creamos algo juntos?</h3>
+                <label form="email">Dejame tu email</label>
+                <!--mensaje dejame tu email-->
+                <!--en lugar de un input sirven para lo mismo -->
+                <!--siendo for e id igual hace focus el recradro (enlazar)-->
+                <input type="text" placeholder="Dejame tu Email" value="@gmail.com" id="email">
+                <!--placeholder pone el recuadro para poner tu email-->
+                <!--value pone el @gmail en el recuadro-->
+                <!--siendo for e id igual hace focus el recradro (enlazar)-->
+                <button>Enviar</button>
+                <!--boton de enviar-->
+            </form>
+
+            <div class="social">
+                <a href="https//twitter.com/victoor_pena" target="_blank" class="social-link twitter"></a>
+                <a href="https//facebook.com/victor.pena.3114" target="_blank" class="social-link facebook"></a>
+                <a href="" class="social-link github"></a>
+                <a href="https://www.facebook.com/victor.pena.3114" target="_blank" class="social-link instagram"></a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div>
+                <p>Curso de Desarrollo web <img width="80px" height="40px" src="VPff.png" alt="vp"></p>
+            </div>
+
+            <div>
+                <p>
+                    Designed whith
+                    <3 by <a href="https://file:///Users/estherherandez/Documents/PLATZI/DW/index.html#Experiencia">@VictorPeña</a>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script>
+        // console.log('Hola mundo! es mi primera linea en JS');
+
+        const ipad = window.matchMedia('screen and (max-width: 767px')
+        const menu = document.querySelector('.menu');
+        // console.log(menu);
+        const burgerButton = document.querySelector('#burger-menu');
+        // console.log(burgerButton);
+
+
+        ipad.addListener(validation)
+
+
+        function validation(event) {
+            if (event.matches) {
+                burgerButton.addEventListener('click', hideShow)
+            } else {
+                burgerButton.removeEventListener('click', hideShow)
+            }
+        }
+
+        validation(ipad);
+        // para que en el telefono fuencione el menu de burger-button
+
+        function hideShow() {
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

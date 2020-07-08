@@ -728,7 +728,7 @@ figure {
         font-size: 2.5em;
         /* modificando tamaño de letra */
         z-index: 2;
-        /* z-index: 2;sera el que este encima del z-index 2 */
+        /* z-index: 2;sera el que este encima del z-index 1 */
     }
     /* positions css */
     .hero-image {
